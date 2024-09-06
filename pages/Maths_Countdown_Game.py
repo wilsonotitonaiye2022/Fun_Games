@@ -3,10 +3,10 @@ import random
 import itertools
 import operator
 import time
-import pygame
+#import pygame
 
 
-st.set_page_config()
+st.set_page_config(layout="wide")
 
 # Function to generate random numbers based on the user’s choice
 def generate_numbers(large_count):
@@ -30,16 +30,16 @@ def generate_target():
 
 
 # Initialize pygame mixer
-pygame.mixer.init()
+#pygame.mixer.init()
 
-# Function to play sound in a loop
-def play_sound(sound_file):
-    pygame.mixer.music.load(sound_file)
-    pygame.mixer.music.play(-1)  # Play in a loop
+# # Function to play sound in a loop
+# def play_sound(sound_file):
+#     pygame.mixer.music.load(sound_file)
+#     pygame.mixer.music.play(-1)  # Play in a loop
 
-# Function to stop the sound
-def stop_sound():
-    pygame.mixer.music.stop()
+# # Function to stop the sound
+# def stop_sound():
+#     pygame.mixer.music.stop()
 
 # Countdown timer function and play music during countdown
 def countdown_timer(duration):
