@@ -5,6 +5,7 @@ from folium import CustomIcon
 import pandas as pd
 import geopandas as gpd
 
+st.set_page_config(layout="wide")
 
 # Load your dataframe
 df = pd.read_csv("data/country_df.csv")
