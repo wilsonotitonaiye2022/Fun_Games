@@ -47,7 +47,7 @@ def countdown_timer(duration):
     ph = st.empty()  # Placeholder for countdown display
 
     # Start playing the sound
-    play_sound('sound/alarm.mp3')  # Replace 'alarm.mp3' with your sound file
+    #play_sound('sound/alarm.mp3')  # Replace 'alarm.mp3' with your sound file
 
     # Countdown loop
     for secs in range(duration, 0, -1):
@@ -56,7 +56,7 @@ def countdown_timer(duration):
         time.sleep(1)
 
     # Stop the sound after countdown finishes
-    stop_sound()
+    #stop_sound()
 
     # Display countdown finished
     ph.metric("Countdown", "00:00")
@@ -116,7 +116,7 @@ def reset_game():
     st.session_state.generated = False
     st.session_state.timer_started = False
     st.session_state.solution_shown = False
-    stop_sound()  # Stop the sound when resetting the game
+    #stop_sound()  # Stop the sound when resetting the game
 
 # Initialize session state variables
 if "selected_numbers" not in st.session_state:
