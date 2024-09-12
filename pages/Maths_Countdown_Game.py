@@ -134,13 +134,13 @@ if "solution_shown" not in st.session_state:
 st.title(":male-technologist: Maths Countdown Game :1234:")
 
 st.markdown("### **Game Rules.**")
-st.markdown("1. Select between 0 to 3 number of large numbers to generate. Large numbers are between **11 and 100** and Small numbers are between **1 and 10**.")
+st.markdown("1. Select between 0 to 4 number of large numbers to generate. Large numbers are between **11 and 100** and Small numbers are between **1 and 10**.")
 st.markdown("2. Click on the 'Generate' button to generate numbers and target.")
 st.markdown("3. Start the timer and find a solution to reach the target number.")
 st.markdown("4. Click on the 'Show Solution' button to display the solution.")
 st.markdown("---")
-st.markdown("### :microphone: Who is the boss when it comes to numbers! :male-detective:")
-st.markdown("### :mega: Let the game begin! :fireworks:")
+st.markdown("### :microphone: Who is the boss when it comes to numbers? :male-detective:")
+st.markdown("### :mega: Let the game begin!!!!! :fireworks:")
 st.markdown("---")
 
 st.markdown("---")
@@ -154,7 +154,7 @@ with st.sidebar:
 # Step 1: Generate Numbers and Target
 with st.form("generate_form"):
     st.subheader("Step 1: Generate Numbers and Target")
-    large_count = st.number_input("Number of Large Numbers (0 to 3):", min_value=0, max_value=3, value=2)
+    large_count = st.number_input("Number of Large Numbers (0 to 4):", min_value=0, max_value=4, value=2)
     generate_button = st.form_submit_button("Generate")
 
     if generate_button:
@@ -173,7 +173,7 @@ if st.session_state.generated:
 if st.session_state.generated and not st.session_state.timer_started and not st.session_state.solution_shown:
     with st.form("timer_form"):
         st.subheader("Step 2: Start Timer")
-        timer_duration = st.selectbox("Select Countdown Duration:", [30, 60], index=0)
+        timer_duration = st.selectbox("Select Countdown Duration (Secs):", [30, 45, 60], index=0)
         start_timer = st.form_submit_button("Start Timer")
 
         if start_timer:
