@@ -84,6 +84,7 @@ st.markdown("1. Click on the 'Generate 5 Random Flags' button to select 5 countr
 st.markdown("2. Try to name the countries of the flags shown and mark location on flag.")
 st.markdown("3. Click on the 'Show Answer' tab to see the countries and fun facts.")
 st.markdown("4. At the top right corner on the map,  tick the Country Flags box to show flags on map.")
+st.markdown("5. Click on flag on map to see facts about the country.")
 st.markdown("---")
 st.markdown("### Have fun! :smile:")
 st.markdown("---")
