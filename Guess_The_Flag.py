@@ -37,7 +37,7 @@ def create_map(selected_countries):
     )
     
     # Create a single FeatureGroup for all flags
-    flags_layer = folium.FeatureGroup(name='Country Flags',show=False)
+    flags_layer = folium.FeatureGroup(name='Country Flags',show=True)
     
     # Add selected countries with green geometry and flag icons
     for _, row in selected_countries_gdf.iterrows():
